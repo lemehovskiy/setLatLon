@@ -1,0 +1,29 @@
+{
+    "name": "setLatLon",
+    "version": "0.1.0",
+    "description": "Set lat lon",
+    "main": "build\/setLatLon.js",
+    "dependencies": {
+        "jquery": "^3.2.1"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-env": "^1.6.0",
+        "webpack": "^3.6.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "webpack"
+    },
+    "keywords": [
+        "lat",
+        "lon"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https:\/\/github.com\/lemehovskiy\/setLatLon"
+    },
+    "author": "lemehovskiy",
+    "license": "ISC"
+}
