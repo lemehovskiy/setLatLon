@@ -1,4 +1,4 @@
-git /*
+/*
  Version: 1.0.0
  Author: lemehovskiy
  Website: http://lemehovskiy.github.io
