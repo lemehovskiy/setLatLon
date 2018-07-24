@@ -4,7 +4,7 @@
     "description": "Set lat lon",
     "main": "build/setLatLon.js",
     "dependencies": {
-        "jquery": "^3.2.1"
+        "jquery": "^3.3.1"
     },
     "devDependencies": {
         "autoprefixer": "^7.2.3",
