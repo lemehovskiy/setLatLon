@@ -2,7 +2,7 @@
     "name": "setLatLon_test",
     "version": "0.1.0",
     "description": "Set lat lon",
-    "main": "build\/setLatLon.js",
+    "main": "build/setLatLon.js",
     "dependencies": {
         "jquery": "^3.2.1"
     },
@@ -13,11 +13,12 @@
         "babel-preset-env": "^1.6.0",
         "css-loader": "^0.28.7",
         "extract-text-webpack-plugin": "^3.0.2",
+        "load-google-maps-api": "^1.3.2",
         "node-sass": "^4.7.2",
         "postcss-loader": "^2.0.9",
+        "resolve-url-loader": "^2.2.1",
         "sass-loader": "^6.0.6",
         "style-loader": "^0.19.1",
-        "resolve-url-loader": "^2.2.1",
         "webpack": "^3.6.0"
     },
     "scripts": {
@@ -30,7 +31,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https:\/\/github.com\/lemehovskiy\/setLatLon"
+        "url": "https://github.com/lemehovskiy/setLatLon"
     },
     "author": "lemehovskiy",
     "license": "ISC"
