@@ -26,26 +26,35 @@ $(document).ready(function () {
                 let updatedStores = [];
                 let counter = 0;
 
+                console.log(stores);
                 stores.forEach(function(store){
                     store.lat = '';
                     store.lng = '';
                 })
 
                 let geocodeInterval = setInterval(function () {
-                    geocoder.geocode({'address': stores[counter].City + ' ' + stores[counter].Address}, function (results, status) {
-                        if (status === 'OK') {
 
+                    let address = stores[counter].State + ' ' + stores[counter].City + ' ' + stores[counter].Address;
+
+                    geocoder.geocode({'address': address}, function (results, status) {
+                        if (status === 'OK') {
+                            console.log(counter);
                             let tempData = stores[counter];
                             tempData.lat = results[0].geometry.location.lat();
                             tempData.lng = results[0].geometry.location.lng();
 
                             updatedStores.push(tempData);
+
+                            counter++;
                         } else {
-                            alert('Geocode was not successful for the following reason: ' + status);
+                            console.warn(Error);
+                            console.warn(counter);
+
+                            counter++;
                         }
                     });
 
-                    if (counter == 2) {
+                    if (counter == stores.length - 1) {
                         clearInterval(geocodeInterval);
 
                         setTimeout(function(){
@@ -56,7 +65,6 @@ $(document).ready(function () {
                         }, 1500)
                     }
 
-                    counter++;
                 }, 1000)
 
 
